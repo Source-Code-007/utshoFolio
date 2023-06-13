@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import testBg2 from '../../../assets/img/wave-haikei.svg'
 const Banner = () => {
     return (
-        <div className="min-h-screen bg-cover bg-center flex items-center text-white" style={{ backgroundImage: `url(${testBg2})` }}>
+        <div className="min-h-screen bg-cover bg-center flex items-center text-white bg-fixed" style={{ backgroundImage: `url(${testBg2})` }}>
             <div className='pl-14 space-y-5'>
                 <p className='font-semibold text-2xl'>Hello, I'm <span className='text-[#e74c3c] font-bold text-2xl'>UTSHO</span></p>
                 <p>

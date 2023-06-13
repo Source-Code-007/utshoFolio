@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CommonSectionTitle from '../../../HelpingCompo/CommonSectionTitle';
 import spiceOfLifeMockup from '../../../assets/img/spiceOfLife.png'
 
@@ -12,8 +13,8 @@ const Projects = () => {
                 <div className='flex items-center justify-center'>
                    <div className='space-y-4'>
                    <h2 className='font-bold text-4xl'>Spice Of Life</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam atque aliquid quae laboriosam cupiditate molestias dicta impedit! Nobis in doloremque illo esse ullam vero sint quam amet repudiandae praesentium.</p>
-                    <button className='cmn-btn-one'>View Demo</button>
+                    <p className='!mb-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nam atque aliquid quae laboriosam cupiditate molestias dicta impedit! Nobis in doloremque illo esse ullam vero sint quam amet repudiandae praesentium.</p>
+                   <Link to={'https://spice-of-life-48f62.web.app/'}> <button className='cmn-btn-one'>View Demo</button></Link>
                    </div>
                 </div>
             </div>
