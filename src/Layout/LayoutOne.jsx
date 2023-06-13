@@ -1,8 +1,12 @@
 import { Outlet } from 'react-router-dom';
+import Navbar from '../Components/Navbar/Navbar';
 
 const LayoutOne = () => {
     return (
-        <Outlet></Outlet>
+        <>
+            <Navbar></Navbar>
+            <Outlet></Outlet>
+        </>
     );
 };
 
