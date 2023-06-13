@@ -5,5 +5,10 @@
 
 
 
+.my-container{
+    @apply max-w-7xl mx-4 md:mx-6 lg:mx-10 xl:mx-auto
+}
+
 .cmn-btn-one{
-    @apply bg-[#e74c3c] px-5 py-2 hover:bg-[#e74d3c8d] rounded text-slate-50 font-bold}
+    @apply bg-[#e74c3c] px-5 py-2 hover:bg-[#e74d3c8d] rounded text-slate-50 font-bold
+}

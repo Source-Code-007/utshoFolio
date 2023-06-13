@@ -11,11 +11,11 @@ const Banner = () => {
                         sequence={[
                             // Same substring at the start will only be typed once, initially
                             'A passionate Web Developer',
-                            1000,
+                            1500,
                             'A passionate Frontend Developer',
-                            1000,
+                            1500,
                             'A passionate Problem Solver ',
-                            1000,
+                            1500,
                         ]}
                         speed={50}
                         // style={{ fontSize: '2em' }}
