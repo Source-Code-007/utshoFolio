@@ -1,7 +1,25 @@
+import { useEffect, useState } from "react";
 import MyActiveLink from "../../HelpingCompo/MyActiveLink";
 import logo from '../../assets/img/utsho-logo.png'
+import { motion } from "framer-motion";
 
 const Navbar = () => {
+    const [isTop, setIsTop] = useState(true)
+
+
+    useEffect(()=>{
+
+        const handleScroll = ()=>{
+            const isTopP = window.scrollY<100
+            setIsTop(isTopP)
+        }
+
+        window.addEventListener('scroll', handleScroll)
+
+        return ()=>{
+            window.removeEventListener('scroll', handleScroll)
+        }
+    },[isTop])
 
     const menu = <>
         <li><MyActiveLink to={'/'}>Home</MyActiveLink></li>
@@ -11,7 +29,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="navbar bg-slate-800 bg-opacity-70 fixed">
+        <div className={`navbar bg-slate-800 transition ${isTop? 'bg-opacity-5' : 'bg-opacity-70'} fixed inset-x-0 z-40`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -29,7 +47,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="cmn-btn-one">Resume</button>
+                <motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className='cmn-btn-one'> Hire me </motion.button>
             </div>
         </div>
     );

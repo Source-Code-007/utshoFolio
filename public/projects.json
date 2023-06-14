@@ -5,7 +5,7 @@
         "liveLink": "https://spice-of-life-48f62.web.app/",
         "projectImg": "https://i.ibb.co/tBDHhk6/spice-Of-Life.png",
         "projectBanner": "https://img.freepik.com/free-photo/studio-image-male-chef-cook-preparing-meals-pan_613910-2794.jpg?w=1380&t=st=1686715163~exp=1686715763~hmac=02bf64d2a64dac976d980ccccc9b22c537a8d1bf6255a5eca6ef9318ab3a7307",
-        "projectOverview": "This is an amazing project showcasing the latest technologies.",
+        "projectOverview": "This is a recipe website where you can find recipes from top chefs, read blogs, and sign up or sign in to share your own recipes. I used React for the client side and Firebase and Express for the server side in this project.",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase", "Express JS"]
       },
     {
@@ -14,7 +14,7 @@
         "liveLink": "https://edutainment-toys-ph.web.app/",
         "projectImg": "https://i.ibb.co/SPvgLfh/edutainment-Toys.png",
         "projectBanner": "https://img.freepik.com/free-photo/portrait-little-boy-playing-with-toys_23-2148836240.jpg?w=1060&t=st=1686716355~exp=1686716955~hmac=faf8fdf2d1e6d0fa30f9fb0bddcd46efd5a996b6407fc3b50695b02c2ea650ab",
-        "projectOverview": "This is an amazing project showcasing the latest technologies.",
+        "projectOverview": "Welcome to Edutainment Toy, an educational toy website where users can explore, contribute, and engage in the world of educational toys. This repository contains the codebase for the Edutainment Toy website, built using HTML, CSS, React, Node.js, Express.js, Firebase, and MongoDB.",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase", "Express JS", "mongoDB"]
       },
     {
@@ -23,7 +23,7 @@
         "liveLink": "https://wizcraft-academy.web.app/",
         "projectImg": "https://i.ibb.co/0qq4SrZ/wiz-Craft-academy.png",
         "projectBanner": "https://img.freepik.com/free-vector/magic-school-classroom-night_107791-3187.jpg?w=1380&t=st=1686716218~exp=1686716818~hmac=1e8dea0b734aae84088b87bf2d20b05e9ae7c0d0b5c5743c80a7cd8aaa8c6ccd",
-        "projectOverview": "This is an amazing project showcasing the latest technologies.",
+        "projectOverview": "Welcome to the Magic School Summer Camp website! This is a React-based project that allows students to enroll in and learn specific extra-curricular activities during their summer break. The website utilizes React, Express, MongoDB, Tailwind CSS, and Firebase to provide a seamless experience for students, parents, and administrators.",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase", "Express JS", "mongoDB"]
       }
       
