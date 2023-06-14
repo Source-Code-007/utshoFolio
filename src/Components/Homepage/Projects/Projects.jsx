@@ -6,9 +6,9 @@ import wizCraftMockup from '../../../assets/img/wizCraft-academy.png'
 
 const Projects = () => {
     return (
-        <div className='py-20 my-container'>
+        <div className='py-20 my-container' id='projects'>
             <CommonSectionTitle title={'projects'} subtitle={'Here you will find some of the personal and clients projects that I created with each project containing its own case study'}></CommonSectionTitle>
-            <div className='space-y-36'>
+            <div className='space-y-36 mt-10'>
                 <div className='grid grid-cols-2 gap-6'>
                     <div>
                         <img src={spiceOfLifeMockup} alt="" />
