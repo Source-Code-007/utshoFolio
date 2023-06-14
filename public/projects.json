@@ -13,7 +13,7 @@
         "projectName": "Edutainment Toys",
         "liveLink": "https://edutainment-toys-ph.web.app/",
         "projectImg": "https://i.ibb.co/SPvgLfh/edutainment-Toys.png",
-        "projectBanner": "https://img.freepik.com/free-photo/portrait-little-boy-playing-with-toys_23-2148836240.jpg?w=1060&t=st=1686716355~exp=1686716955~hmac=faf8fdf2d1e6d0fa30f9fb0bddcd46efd5a996b6407fc3b50695b02c2ea650ab",
+        "projectBanner": "https://images.unsplash.com/photo-1685358279653-868c0b99fe6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDF8fGVkdWNhdGlvbiUyMHRveXxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
         "projectOverview": "Welcome to Edutainment Toy, an educational toy website where users can explore, contribute, and engage in the world of educational toys. This repository contains the codebase for the Edutainment Toy website, built using HTML, CSS, React, Node.js, Express.js, Firebase, and MongoDB.",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase", "Express JS", "mongoDB"]
       },

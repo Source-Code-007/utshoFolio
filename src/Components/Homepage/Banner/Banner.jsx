@@ -6,12 +6,13 @@ import { motion } from "framer-motion";
 const Banner = () => {
     return (
         <div className="min-h-screen bg-cover bg-center flex items-center justify-center text-white bg-fixed" style={{ backgroundImage: `url(${testBg2})` }}>
-            <div className='pl-14 space-y-5 px-5 w-full md:4/6 xl:w-3/6'>
+            <div className='pl-14 px-5 w-full md:4/6 xl:w-3/6'>
                 <motion.div
                     animate={{ x: 50 }}
                     transition={{ type: "spring", stiffness: 100 }}
+                    className='space-y-8'
                 >
-                    <p className='font-semibold text-2xl'>Hello, I'm <span className='text-[#e74c3c] font-bold text-2xl'>UTSHO</span></p>
+                    <h2 className='font-bold text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>UTSHO</span></h2>
                     <p>
                         <TypeAnimation
                             sequence={[
@@ -25,7 +26,7 @@ const Banner = () => {
                             ]}
                             speed={50}
                             // style={{ fontSize: '2em' }}
-                            className='font-bold text-4xl md:text-5xl'
+                            className='font-semibold text-2xl'
                             repeat={Infinity}
                         />
                     </p>

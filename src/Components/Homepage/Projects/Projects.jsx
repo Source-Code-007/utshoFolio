@@ -51,7 +51,7 @@ const Projects = () => {
 
 
                 <motion.div
-                    animate={{ x: 50 }}
+                    animate={{ x: 50, y:50 }}
                     transition={{ type: "spring", stiffness: 100 }}
                 >
                     <div className='grid grid-cols-2 gap-6'>

@@ -26,7 +26,8 @@ const Project = () => {
     }
 
     return (
-        <div>
+        <div className="pb-14">
+
             <div className="h-[70vh] flex items-center justify-center bg-slate-800 bg-blend-overlay bg-center bg-cover" style={{ backgroundImage: `url(${project.projectBanner})` }}>
                 <motion.div
                     animate={{ x: 50 }}
@@ -39,23 +40,24 @@ const Project = () => {
                     </div>
                 </motion.div>
             </div>
+
             <div className="my-container space-y-20">
 
                 <motion.div
-                    animate={{ y: 50, x:50, rotate: 360 }}
-                    transition={{ type: "spring", stiffness: 50 }}
+                    animate={{ y: 50, x:50, }}
+                    transition={{ type: "spring", stiffness: 100 }}
                 >
                     <figure>
                         <img className="mx-auto" src={project.projectImg} alt="" />
                     </figure>
                 </motion.div>
 
-                <div className="space-y-5">
+                <div className="space-y-8">
                     <h2 className="cmn-title-one">Project Overview</h2>
                     <p>{project.projectOverview}</p>
                 </div>
 
-                <div className="space-y-5 !mb-16">
+                <div className="space-y-8 !mb-16">
                     <h2 className="cmn-title-one">Tools Used</h2>
                     {
                         project.tools.map(p => <button className="btn btn-ghost mx-2 !text-white" disabled key={p}>{p}</button>)
