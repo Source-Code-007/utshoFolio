@@ -19,3 +19,7 @@ body{
 .cmn-btn-one{
     @apply bg-[#e74c3c] px-5 py-2 hover:bg-[#e74d3c8d] rounded text-slate-50 font-bold
 }
+
+.cmn-title-one{
+    @apply font-bold text-5xl
+}

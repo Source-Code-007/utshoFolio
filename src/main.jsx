@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LayoutOne from './Layout/LayoutOne.jsx'
 import Homepage from './Components/Homepage/Homepage'
+import Project from './Components/Project/Project'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Homepage></Homepage>
+      },
+      {
+        path: '/project/:id',
+        element: <Project></Project>
       }
     ]
   }
