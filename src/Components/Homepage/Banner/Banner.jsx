@@ -14,7 +14,7 @@ const Banner = () => {
                     transition={{ type: "spring", stiffness: 100 }}
                     className='space-y-8'
                 >
-                    <h2 className='font-bold text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>UTSHO</span></h2>
+                    <h2 className='font-bold text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>Ahashan Habib Utsho</span></h2>
                     <p>
                         <TypeAnimation
                             sequence={[
@@ -46,9 +46,9 @@ const Banner = () => {
                 </motion.div>
             </div>
             <div className='w-auto h-auto flex flex-col gap-5 text-xl absolute right-5 top-1/2 -translate-x-1/2 bg-[#e74d3c55] p-3'>
-                <Link className='inline-block focus:scale-110 text-[#e74c3c]'><FaFacebook></FaFacebook></Link>
-                <Link className='inline-block focus:scale-110 text-[#e74c3c]'><FaLinkedin></FaLinkedin></Link>
-                <Link className='inline-block focus:scale-110 text-[#e74c3c]'><FaGithub></FaGithub></Link>
+                <Link className='inline-block focus:scale-110' to={'https://web.facebook.com/UtshoBhai007'} target='_blank'><FaFacebook></FaFacebook></Link>
+                <Link className='inline-block focus:scale-110' to={'https://www.linkedin.com/in/ahashan-habib-utsho-722745107'} target='_blank'><FaLinkedin></FaLinkedin></Link>
+                <Link className='inline-block focus:scale-110' to={'https://github.com/Source-Code-007'} target='_blank'><FaGithub></FaGithub></Link>
             </div>
         </div >
     );
