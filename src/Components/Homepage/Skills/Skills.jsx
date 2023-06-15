@@ -23,7 +23,7 @@ const Skills = () => {
                     {
                         tabs.map((tab, ind) => {
                             return <Tab key={ind}><motion.button onClick={() => { setCurrTab(tab) }}
-                                whileHover={{ scale: 1.1, transition: { duration: .5 } }} whileTap={{ scale: 0.8 }} className={`${currTab === tab ? 'cmn-btn-one' : 'cmn-btn-one-outline'}`}> {tab}
+                                whileHover={{ scale: 1.1, transition: { duration: .5 } }} whileTap={{ scale: 0.8 }} className={`${currTab === tab ? 'cmn-btn-two' : 'cmn-btn-two-outline'}`}> {tab}
                             </motion.button></Tab>
                         })
                     }
@@ -33,13 +33,13 @@ const Skills = () => {
                 <div className='mt-16'>
                     {tabPanels.map((tabPanel, ind) => {
                         return <TabPanel key={ind}>
-                            <div className='grid grid-cols-2 gap-4'>
+                            <div className='grid grid-cols-2 gap-4 font-bold'>
 
                                 {
                                     tabPanel.map((skill, ind) =>
                                         <div key={ind} className='bg-slate-800 text-white bg-opacity-50 py-6 px-8 rounded relative'>
                                             {skill.tech}
-                                            <div className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c55]`} style={{ width: `${skill.range}%` }}></div>
+                                            <div className={`absolute top-0 left-0 z-50 h-full bg-[#2ecc7034]`} style={{ width: `${skill.range}%` }}></div>
                                         </div>
                                     )
                                 }

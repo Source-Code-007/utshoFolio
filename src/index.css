@@ -26,6 +26,12 @@ body{
 .cmn-btn-one-outline{
     @apply  text-[#e74c3c] border-2 border-[#e74c3c] hover:bg-[#e74c3c] hover:text-white transition px-5 py-2 rounded font-bold
 }
+.cmn-btn-two-outline{
+    @apply  text-[#2ecc71] border-2 border-[#2ecc71] hover:bg-[#2ecc71] hover:text-white transition px-5 py-2 rounded font-bold
+}
+.cmn-btn-two{
+    @apply bg-[#2ecc71] px-5 py-2 hover:bg-[#2ecc7034] rounded text-slate-50 font-bold
+}
 
 .cmn-title-one{
     @apply font-bold text-5xl
