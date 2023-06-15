@@ -3,33 +3,37 @@ import MyActiveLink from "../../HelpingCompo/MyActiveLink";
 import logo from '../../assets/img/utsho-logo.png'
 import { motion } from "framer-motion";
 
+
 const Navbar = () => {
     const [isTop, setIsTop] = useState(true)
 
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        const handleScroll = ()=>{
-            const isTopP = window.scrollY<100
+        const handleScroll = () => {
+            const isTopP = window.scrollY < 100
             setIsTop(isTopP)
         }
 
         window.addEventListener('scroll', handleScroll)
 
-        return ()=>{
+        return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-    },[isTop])
+    }, [isTop])
 
     const menu = <>
-        <li><MyActiveLink to={'/'}>Home</MyActiveLink></li>
-        <li><MyActiveLink to={'/about'}>About</MyActiveLink></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        {/* <li><MyActiveLink to={'/'}>Home</MyActiveLink></li>
+        <li><MyActiveLink to={'#about'}>About</MyActiveLink></li>
         <li><MyActiveLink to={'/Case Studies'}>Case Study</MyActiveLink></li>
-        <li><MyActiveLink to={'/contact'}>Contacts</MyActiveLink></li>
+        <li><MyActiveLink to={'/contact'}>Contacts</MyActiveLink></li> */}
     </>
 
     return (
-        <div className={`navbar shadow transition ${isTop? 'bg-[#e74d3c09]' : 'bg-[#e74d3c1e]'} fixed inset-x-0 z-40`}>
+        <div className={`navbar shadow transition ${isTop ? 'bg-[#e74d3c09]' : 'bg-[#e74d3c1e]'} fixed inset-x-0 z-40`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,15 +43,37 @@ const Navbar = () => {
                         {menu}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl"><img src={logo} className="w-10 h-auto" alt="" /></a>
+
+                <motion.div variants={{
+                    hidden: { opacity: 0, x: -75 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                    <a className="btn btn-ghost normal-case text-xl"><img src={logo} className="w-10 h-auto" alt="" /></a>
+                </motion.div>
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     {menu}
                 </ul>
             </div>
+
             <div className="navbar-end">
-                <motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className='cmn-btn-one'> Hire me </motion.button>
+                <motion.div variants={{
+                    hidden: { opacity: 0, x: 75 },
+                    visible: { opacity: 1, x: 0 }
+                }}
+                    initial="hidden"
+                    animate="visible"
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                >
+                    <motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className='cmn-btn-one'> Hire me </motion.button>
+                </motion.div>
+
             </div>
         </div>
     );

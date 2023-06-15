@@ -8,6 +8,7 @@ const Project = () => {
     const [project, setProject] = useState({})
     const [isLoading, setIsLoading] = useState(true)
 
+
     // load project data via id
     useEffect(() => {
         fetch('/projects.json')
@@ -54,7 +55,7 @@ const Project = () => {
 
                 <div className="space-y-8">
                     <h2 className="cmn-title-one">Project Overview</h2>
-                    <p>{project.projectOverview}</p>
+                    <p className="leading-8 text-slate-300">{project.projectOverview}</p>
                 </div>
 
                 <div className="space-y-8 !mb-16">

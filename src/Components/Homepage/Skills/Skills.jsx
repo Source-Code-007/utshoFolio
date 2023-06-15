@@ -8,14 +8,14 @@ const Skills = () => {
     const [currTab, setCurrTab] = useState('Web')
 
 
-    const Web = [{ tech: 'HTML', range: '90' }, { tech: 'CSS', range: '85' }, { tech: 'Tailwind', range: '95' }, { tech: 'Bootstrap', range: '85' }, { tech: 'Javascript', range: '70' }, { tech: 'Firebase', range: '45' }, { tech: 'Express JS', range: '40' }, { tech: 'MongoDB', range: '40' }]
+    const Web = [{ tech: 'HTML', range: '90' }, { tech: 'CSS', range: '85' }, { tech: 'Tailwind', range: '95' }, { tech: 'Bootstrap', range: '85' }, { tech: 'Javascript', range: '70' }, { tech: 'React', range: '90' }, { tech: 'Firebase', range: '45' }, { tech: 'Express JS', range: '40' }, { tech: 'MongoDB', range: '40' }]
     const Tools = [{ tech: 'Figma', range: '80' }, { tech: 'Git', range: '65' }, { tech: 'Photoshop', range: '35' }]
     const Others = [{ tech: 'Team work', range: '70' }, { tech: 'Fast learning', range: '65' }]
     const tabs = ['Web', "Tools", "Others"]
     const tabPanels = [Web, Tools, Others]
 
     return (
-        <div className='my-container py-16'>
+        <div className='my-container py-14' id='skills'>
             <CommonSectionTitle title={'skills'} subtitle={'Cutting-Edge Web Development Expertise'}></CommonSectionTitle>
             <Tabs className={'mt-10'}>
 
