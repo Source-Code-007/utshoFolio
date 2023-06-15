@@ -17,7 +17,7 @@ const Skills = () => {
     return (
         <div className='my-container py-16'>
             <CommonSectionTitle title={'skills'} subtitle={'Cutting-Edge Web Development Expertise'}></CommonSectionTitle>
-            <Tabs>
+            <Tabs className={'mt-10'}>
 
                 <TabList className={'flex justify-center gap-12'}>
                     {
