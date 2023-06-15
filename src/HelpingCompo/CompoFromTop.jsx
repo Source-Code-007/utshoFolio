@@ -5,7 +5,9 @@ const CompoFromTop = ({ children }) => {
     const location = useLocation()
 
     useEffect(() => {
-        window.scrollTo(0, 0)
+        if (location.pathname.split('/')[1]) {
+            window.scrollTo(0, 0)
+        }
     }, [location])
 
     return children

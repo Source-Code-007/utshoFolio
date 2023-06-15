@@ -27,7 +27,7 @@ const Project = () => {
     }
 
     return (
-        <div className="pb-14">
+        <div className="pb-14 pt-8 overflow-x-hidden">
 
             <div className="h-[70vh] flex items-center justify-center bg-slate-800 bg-blend-overlay bg-center bg-cover" style={{ backgroundImage: `url(${project.projectBanner})` }}>
                 <motion.div
@@ -45,12 +45,16 @@ const Project = () => {
             <div className="my-container space-y-20">
 
                 <motion.div
-                    animate={{ y: 50, x:50, }}
+                     variants={{
+                        hidden: { opacity: 0, y: 115 },
+                        visible: { opacity: 1, y: 0 }
+                    }}
+                    initial="hidden"
+                    animate={'visible'}
+                    // transition={{ duration: 0.6, delay: 0.3 }}
                     transition={{ type: "spring", stiffness: 100 }}
                 >
-                    <figure>
-                        <img className="mx-auto" src={project.projectImg} alt="" />
-                    </figure>
+                        <img className="w-5/6 md:w-4/6 h-auto mx-auto mt-6" src={project.projectImg} alt="" />
                 </motion.div>
 
                 <div className="space-y-8">

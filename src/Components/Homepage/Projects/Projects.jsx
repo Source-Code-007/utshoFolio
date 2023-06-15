@@ -36,17 +36,18 @@ const Projects = () => {
         <div className='py-20 mb-32 my-container' id='projects'>
             <CommonSectionTitle title={'projects'} subtitle={'Here you will find some of the personal and clients projects that I created with each project containing its own case study'}></CommonSectionTitle>
             <div className='space-y-36 mt-10'>
+
                 <motion.div
                  ref={project1}
                  variants={{
-                    hidden: { opacity: 0, y: 75 },
+                    hidden: { opacity: 0, y: 115 },
                     visible: { opacity: 1, y: 0 }
                 }}
                 initial="hidden"
                 animate={mainControls1}
-                transition={{ duration: 0.5, delay: 0.3 }}
+                transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <div className='grid grid-cols-2 gap-6'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
                             <img src={spiceOfLifeMockup} alt="" className='pointer-events-none' />
                         </div>
@@ -63,14 +64,14 @@ const Projects = () => {
                 <motion.div
                     ref={project2}
                     variants={{
-                        hidden: { opacity: 0, y: 75 },
+                        hidden: { opacity: 0, y: 115 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     animate={mainControls2}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
                 >
-                    <div className='grid grid-cols-2 gap-6'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
                             <img src={edutainmentToysMockup} alt="" className='pointer-events-none' />
                         </div>
@@ -88,14 +89,14 @@ const Projects = () => {
                 <motion.div
                     ref={project3}
                  variants={{
-                        hidden: { opacity: 0, y: 75 },
+                        hidden: { opacity: 0, y: 115 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     animate={mainControls3}
-                    transition={{ duration: 0.5, delay: 0.3 }}
+                    transition={{ duration: 1, delay: 0.3 }}
                 >
-                    <div className='grid grid-cols-2 gap-6'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
                             <img src={wizCraftMockup} alt="" className='pointer-events-none' />
                         </div>

@@ -33,7 +33,7 @@ const Skills = () => {
                 <div className='mt-12'>
                     {tabPanels.map((tabPanel, ind) => {
                         return <TabPanel key={ind}>
-                            <div className='grid grid-cols-2 gap-4 font-bold text-lg'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 font-bold text-lg'>
 
                                 {
                                     tabPanel.map((skill, ind) =>
