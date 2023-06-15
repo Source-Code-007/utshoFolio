@@ -23,23 +23,23 @@ const Skills = () => {
                     {
                         tabs.map((tab, ind) => {
                             return <Tab key={ind}><motion.button onClick={() => { setCurrTab(tab) }}
-                                whileHover={{ scale: 1.1, transition: { duration: .5 } }} whileTap={{ scale: 0.8 }} className={`${currTab === tab ? 'cmn-btn-two' : 'cmn-btn-two-outline'}`}> {tab}
+                                whileHover={{ scale: 1.1, transition: { duration: .5 } }} whileTap={{ scale: 0.8 }} className={`${currTab === tab ? 'cmn-btn-one' : 'cmn-btn-one-outline'}`}> {tab}
                             </motion.button></Tab>
                         })
                     }
 
                 </TabList>
 
-                <div className='mt-16'>
+                <div className='mt-12'>
                     {tabPanels.map((tabPanel, ind) => {
                         return <TabPanel key={ind}>
-                            <div className='grid grid-cols-2 gap-4 font-bold'>
+                            <div className='grid grid-cols-2 gap-4 font-bold text-lg'>
 
                                 {
                                     tabPanel.map((skill, ind) =>
-                                        <div key={ind} className='bg-slate-800 text-white bg-opacity-50 py-6 px-8 rounded relative'>
+                                        <div key={ind} className='bg-slate-800 bg-opacity-50 text-white py-6 px-8 rounded relative'>
                                             {skill.tech}
-                                            <div className={`absolute top-0 left-0 z-50 h-full bg-[#2ecc7034]`} style={{ width: `${skill.range}%` }}></div>
+                                            <div className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c1e]`} style={{ width: `${skill.range}%` }}></div>
                                         </div>
                                     )
                                 }

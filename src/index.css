@@ -16,12 +16,21 @@ body{
     min-height: 100vh;
 }
 
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;    
+}
+
+
 .my-container{
     @apply max-w-7xl mx-4 md:mx-6 lg:mx-10 xl:mx-auto
 }
 
 .cmn-btn-one{
-    @apply bg-[#e74c3c] px-5 py-2 hover:bg-[#e74d3c8d] rounded text-slate-50 font-bold
+    @apply bg-[#e74c3c] px-5 py-2 hover:bg-[#e74d3c8d] rounded shadow-lg shadow-[#e74d3c62] text-slate-50 font-bold
 }
 .cmn-btn-one-outline{
     @apply  text-[#e74c3c] border-2 border-[#e74c3c] hover:bg-[#e74c3c] hover:text-white transition px-5 py-2 rounded font-bold
@@ -30,7 +39,7 @@ body{
     @apply  text-[#2ecc71] border-2 border-[#2ecc71] hover:bg-[#2ecc71] hover:text-white transition px-5 py-2 rounded font-bold
 }
 .cmn-btn-two{
-    @apply bg-[#2ecc71] px-5 py-2 hover:bg-[#2ecc7034] rounded text-slate-50 font-bold
+    @apply bg-[#2ecc71] px-5 py-2 hover:bg-[#2ecc7034] shadow-lg shadow-[#2ecc7052] rounded text-slate-50 font-bold
 }
 
 .cmn-title-one{

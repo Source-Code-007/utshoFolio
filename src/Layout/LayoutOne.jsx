@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import AnimatedCursor from "react-animated-cursor"
 import { motion, useScroll, useSpring } from "framer-motion";
 import CompoFromTop from '../HelpingCompo/CompoFromTop';
+import Footer from '../Components/Footer/Footer';
 
 
 const LayoutOne = () => {
@@ -15,9 +16,10 @@ const LayoutOne = () => {
     return (
         <>
             <CompoFromTop>
-                <motion.div className="h-1 bg-[#2ecc71] w-full fixed inset-0 z-50" style={{ scaleX }} />
+                <motion.div className="h-1 bg-[#e74c3c] w-full fixed inset-0 z-50" style={{ scaleX }} />
                 <Navbar></Navbar>
                 <Outlet></Outlet>
+                <Footer></Footer>
                 <AnimatedCursor />
             </CompoFromTop>
         </>

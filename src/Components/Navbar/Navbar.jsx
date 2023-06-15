@@ -24,12 +24,12 @@ const Navbar = () => {
     const menu = <>
         <li><MyActiveLink to={'/'}>Home</MyActiveLink></li>
         <li><MyActiveLink to={'/about'}>About</MyActiveLink></li>
-        <li><MyActiveLink to={'/projects'}>Project</MyActiveLink></li>
+        <li><MyActiveLink to={'/Case Studies'}>Case Study</MyActiveLink></li>
         <li><MyActiveLink to={'/contact'}>Contacts</MyActiveLink></li>
     </>
 
     return (
-        <div className={`navbar bg-slate-800 transition ${isTop? 'bg-opacity-5' : 'bg-opacity-70'} fixed inset-x-0 z-40`}>
+        <div className={`navbar shadow transition ${isTop? 'bg-[#e74d3c09]' : 'bg-[#e74d3c1e]'} fixed inset-x-0 z-40`}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

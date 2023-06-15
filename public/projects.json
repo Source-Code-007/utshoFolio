@@ -4,7 +4,7 @@
         "projectName": "Spice of Life",
         "liveLink": "https://spice-of-life-48f62.web.app/",
         "projectImg": "https://i.ibb.co/tBDHhk6/spice-Of-Life.png",
-        "projectBanner": "https://img.freepik.com/free-photo/studio-image-male-chef-cook-preparing-meals-pan_613910-2794.jpg?w=1380&t=st=1686715163~exp=1686715763~hmac=02bf64d2a64dac976d980ccccc9b22c537a8d1bf6255a5eca6ef9318ab3a7307",
+        "projectBanner": "https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hlZnxlbnwwfDB8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
         "projectOverview": "This is a recipe website where you can find recipes from top chefs, read blogs, and sign up or sign in to share your own recipes. I used React for the client side and Firebase and Express for the server side in this project.",
         "tools": ["HTML", "CSS", "JavaScript", "React", "Firebase", "Express JS"]
       },
