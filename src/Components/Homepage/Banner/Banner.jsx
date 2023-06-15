@@ -62,16 +62,7 @@ const Banner = () => {
                 // animate={{ x: 50 }}
                 // transition={{ type: "spring", stiffness: 100 }}
                 >
-                    <motion.button
-                        whileHover={{
-                            scale: 1.1,
-                            transition: { duration: .3 },
-                        }}
-                        whileTap={{ scale: 0.9 }}
-                        className='cmn-btn-one !mt-6'
-                    >
-                        Hire me
-                    </motion.button>
+                                <Link to={'https://drive.google.com/file/d/1LE_UNmr0u0spqej3QxYeNkNXtryQBo8f/view?usp=drive_link'} target="_blank"><motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className={'cmn-btn-one'}> Resume </motion.button> </Link>
                 </motion.div>
 
             </div>

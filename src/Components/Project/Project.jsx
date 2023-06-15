@@ -27,7 +27,7 @@ const Project = () => {
     }
 
     return (
-        <div className="pb-14 pt-8 overflow-x-hidden">
+        <div className="pb-14 overflow-x-hidden">
 
             <div className="h-[70vh] flex items-center justify-center bg-slate-800 bg-blend-overlay bg-center bg-cover" style={{ backgroundImage: `url(${project.projectBanner})` }}>
                 <motion.div

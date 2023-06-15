@@ -40,7 +40,7 @@ const Navbar = () => {
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow-inner border rounded-box w-52">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow border rounded-box w-52">
                         {menu}
                     </ul>
                 </div>
@@ -73,7 +73,7 @@ const Navbar = () => {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
-                    <motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className='cmn-btn-one'> Hire me </motion.button>
+                    <Link to={'https://drive.google.com/file/d/1LE_UNmr0u0spqej3QxYeNkNXtryQBo8f/view?usp=drive_link'} target="_blank"><motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className={'cmn-btn-one'}> Resume </motion.button> </Link>
                 </motion.div>
 
             </div>
