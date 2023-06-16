@@ -30,22 +30,52 @@ const Project = () => {
         <div className="pb-14 overflow-x-hidden">
 
             <div className="h-[70vh] flex items-center justify-center bg-slate-800 bg-blend-overlay bg-center bg-cover" style={{ backgroundImage: `url(${project.projectBanner})` }}>
-                <motion.div
-                    animate={{ x: 50 }}
-                    transition={{ type: "spring", stiffness: 100 }}
-                >
-                    <div className="text-center font-semibold space-y-6 w-5/6 lg:w-4/6 mx-auto">
+                <div className="text-center font-semibold space-y-6 w-5/6 md:4/6 xl:w-3/6 mx-auto">
+                    
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0, y: 75 },
+                            visible: { opacity: 1, y: 0 }
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.5, type: "spring", stiffness: 100 }}
+                    >
                         <h2 className="cmn-title-one">{project.projectName}</h2>
+                    </motion.div>
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0, y: 75 },
+                            visible: { opacity: 1, y: 0 }
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.8, type: "spring", stiffness: 100 }}
+                        // transition={{ duration: 0.5, delay: 0.8 }}
+                    >
                         <p>This page contains the case study of {project.projectName} Website which includes the Project Overview, Tools Used and Live Links to the official product.</p>
+
+                    </motion.div>
+                    <motion.div
+                        variants={{
+                            hidden: { opacity: 0, y: 75 },
+                            visible: { opacity: 1, y: 0 }
+                        }}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 1, type: "spring", stiffness: 100 }}
+                    >
                         <Link to={project.liveLink} target="_blank"><motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className='cmn-btn-one !mt-6'> Live Link </motion.button></Link>
-                    </div>
-                </motion.div>
+
+                    </motion.div>
+
+                </div>
             </div>
 
             <div className="my-container space-y-20">
 
                 <motion.div
-                     variants={{
+                    variants={{
                         hidden: { opacity: 0, y: 115 },
                         visible: { opacity: 1, y: 0 }
                     }}
@@ -54,7 +84,7 @@ const Project = () => {
                     // transition={{ duration: 0.6, delay: 0.3 }}
                     transition={{ type: "spring", stiffness: 100 }}
                 >
-                        <img className="w-5/6 md:w-4/6 h-auto mx-auto mt-6" src={project.projectImg} alt="" />
+                    <img className="w-5/6 md:w-4/6 h-auto mx-auto mt-6" src={project.projectImg} alt="" />
                 </motion.div>
 
                 <div className="space-y-8">

@@ -40,12 +40,12 @@ const Projects = () => {
                 <motion.div
                  ref={project1}
                  variants={{
-                    hidden: { opacity: 0, y: 115 },
+                    hidden: { opacity: 0, y: 150 },
                     visible: { opacity: 1, y: 0 }
                 }}
                 initial="hidden"
                 animate={mainControls1}
-                transition={{ duration: 0.6, delay: 0.3 }}
+                transition={{ type: 'spring', stiffness: 70 }}
                 >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
@@ -64,12 +64,12 @@ const Projects = () => {
                 <motion.div
                     ref={project2}
                     variants={{
-                        hidden: { opacity: 0, y: 115 },
+                        hidden: { opacity: 0, y: 150 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     animate={mainControls2}
-                    transition={{ duration: 0.6, delay: 0.3 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                 >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>
@@ -89,12 +89,12 @@ const Projects = () => {
                 <motion.div
                     ref={project3}
                  variants={{
-                        hidden: { opacity: 0, y: 115 },
+                        hidden: { opacity: 0, y: 150 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     animate={mainControls3}
-                    transition={{ duration: 1, delay: 0.3 }}
+                    transition={{ type: 'spring', stiffness: 70 }}
                 >
                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
                         <div>

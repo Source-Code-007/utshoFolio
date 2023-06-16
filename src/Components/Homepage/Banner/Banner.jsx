@@ -8,7 +8,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 const Banner = () => {
     return (
         <div className="min-h-screen bg-cover bg-center flex items-center justify-center text-white bg-fixed relative overflow-x-hidden" style={{ backgroundImage: `url(${testBg2})` }}>
-            <div className='pl-14 px-5 w-full md:4/6 xl:w-3/6 space-y-8'>
+            <div className='pl-14 px-5 w-full md:w-4/6 space-y-8'>
                 <motion.div
                     variants={{
                         hidden: { opacity: 0, y: 75 },
@@ -18,7 +18,7 @@ const Banner = () => {
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.5, type: "spring", stiffness: 100}}
                 >
-                    <h2 className='font-bold text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>Ahashan Habib Utsho</span></h2>
+                    <h2 className='font-bold text-3xl lg:text-4xl xl:text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>Ahashan Habib Utsho</span></h2>
                 </motion.div>
                 <motion.div
                     variants={{
@@ -28,8 +28,6 @@ const Banner = () => {
                     initial="hidden"
                     animate="visible"
                     transition={{ duration: 0.5, delay: 0.8 }}
-                // animate={{ x: 50 }}
-                // transition={{ type: "spring", stiffness: 100 }}
                 >
                     <p>
                         <TypeAnimation
@@ -44,7 +42,7 @@ const Banner = () => {
                             ]}
                             speed={50}
                             // style={{ fontSize: '2em' }}
-                            className='font-semibold text-2xl'
+                            className='font-semibold text-lg lg:text-xl xl:text-2xl'
                             repeat={Infinity}
                         />
                     </p>

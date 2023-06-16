@@ -10,19 +10,19 @@ const Skills = () => {
     const skillWinView = useInView(skillRangeW, {once: true})
     const controlSkillsRangeW = useAnimation()
     
+    // visible skills background range when view
     useEffect(()=>{
-        console.log(skillWinView);
         if(skillWinView){
             controlSkillsRangeW.start('visible')
         }
-    }, [skillWinView, controlSkillsRangeW])
+    }, [skillWinView, controlSkillsRangeW, currTab])
 
 
     const Web = [{ tech: 'HTML', range: '90' }, { tech: 'CSS', range: '85' }, { tech: 'Tailwind', range: '95' }, { tech: 'Bootstrap', range: '85' }, { tech: 'Javascript', range: '70' }, { tech: 'React', range: '90' }, { tech: 'Firebase', range: '45' }, { tech: 'Express JS', range: '40' }, { tech: 'MongoDB', range: '40' }]
     const Tools = [{ tech: 'VS Code', range: '90' }, { tech: 'Figma', range: '80' }, { tech: 'Git', range: '65' }, { tech: 'Photoshop', range: '35' }]
     const Others = [{ tech: 'Team work', range: '98' }, { tech: 'Time Management', range: '95' }, { tech: 'Self Motivation', range: '100' }, { tech: 'Problem Solving', range: '70' }]
-    const tabs = ['Web', "Tools", "Others"]
-    const tabPanels = [Web, Tools, Others]
+    const tabs = ['Web', "Tools", "Others"] //for tab button
+    const tabPanels = [Web, Tools, Others] // for tabPanel
 
     return (
         <div className='my-container py-14' id='skills'>
@@ -40,14 +40,14 @@ const Skills = () => {
 
                 </TabList>
 
-                <div className='mt-12'>
+                <div className='mt-12 '>
                     {tabPanels.map((tabPanel, ind) => {
                         return <TabPanel key={ind}>
-                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 font-bold text-lg'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 font-bold text-lg '>
 
                                 {
                                     tabPanel.map((skill, ind) =>
-                                        <div key={ind} className='bg-slate-800 bg-opacity-50 text-white py-6 px-8 rounded relative'>
+                                        <div key={ind} className='bg-slate-800 bg-opacity-50 text-white py-6 px-8 rounded relative overflow-x-hidden'>
                                             {skill.tech}
                                             <motion.div 
                                             ref={skillRangeW}
@@ -57,9 +57,8 @@ const Skills = () => {
                                             }}
                                             initial= 'hidden'
                                             animate= {controlSkillsRangeW}
-                                            transition={{duration: 1, delay: 0.2}}
+                                            transition={{type: "spring", stiffness: 50}}
                                             className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c1e]`} ></motion.div>
-                                            {/* style={{ width: `${skill.range}%` }} */}
                                         </div>
                                     )
                                 }
