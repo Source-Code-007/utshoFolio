@@ -1,11 +1,21 @@
 import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import CommonSectionTitle from '../../../HelpingCompo/CommonSectionTitle';
-import { motion } from "framer-motion";
-import { useState } from 'react';
+import { motion, useAnimation, useInView } from "framer-motion";
+import { useEffect, useRef, useState } from 'react';
 
 
 const Skills = () => {
     const [currTab, setCurrTab] = useState('Web')
+    const skillRangeW = useRef(null)
+    const skillWinView = useInView(skillRangeW, {once: true})
+    const controlSkillsRangeW = useAnimation()
+    
+    useEffect(()=>{
+        console.log(skillWinView);
+        if(skillWinView){
+            controlSkillsRangeW.start('visible')
+        }
+    }, [skillWinView, controlSkillsRangeW])
 
 
     const Web = [{ tech: 'HTML', range: '90' }, { tech: 'CSS', range: '85' }, { tech: 'Tailwind', range: '95' }, { tech: 'Bootstrap', range: '85' }, { tech: 'Javascript', range: '70' }, { tech: 'React', range: '90' }, { tech: 'Firebase', range: '45' }, { tech: 'Express JS', range: '40' }, { tech: 'MongoDB', range: '40' }]
@@ -39,7 +49,17 @@ const Skills = () => {
                                     tabPanel.map((skill, ind) =>
                                         <div key={ind} className='bg-slate-800 bg-opacity-50 text-white py-6 px-8 rounded relative'>
                                             {skill.tech}
-                                            <div className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c1e]`} style={{ width: `${skill.range}%` }}></div>
+                                            <motion.div 
+                                            ref={skillRangeW}
+                                            variants={{
+                                                hidden:{opacity:0, width:0},
+                                                visible:{opacity:1, width: `${skill.range}%`}
+                                            }}
+                                            initial= 'hidden'
+                                            animate= {controlSkillsRangeW}
+                                            transition={{duration: 1, delay: 0.2}}
+                                            className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c1e]`} ></motion.div>
+                                            {/* style={{ width: `${skill.range}%` }} */}
                                         </div>
                                     )
                                 }

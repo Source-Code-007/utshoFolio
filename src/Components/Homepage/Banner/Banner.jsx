@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { TypeAnimation } from 'react-type-animation';
 import testBg2 from '../../../assets/img/wave-haikei.svg'
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -16,9 +16,7 @@ const Banner = () => {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                // animate={{ x: 50 }}
-                // transition={{ type: "spring", stiffness: 100 }}
+                    transition={{ duration: 0.5, delay: 0.5, type: "spring", stiffness: 100}}
                 >
                     <h2 className='font-bold text-5xl'>Hello, I'm <span className='text-[#e74c3c]'>Ahashan Habib Utsho</span></h2>
                 </motion.div>
@@ -70,12 +68,12 @@ const Banner = () => {
             {/* social icon */}
             {/* <div className=''> */}
             <motion.div variants={{
-                hidden: { opacity: 0, y: -75 },
-                visible: { opacity: 1, y: 0 }
+                hidden: { opacity: 0, x: 50 },
+                visible: { opacity: 1, x: 0 }
             }}
                 initial="hidden"
                 animate="visible"
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5, delay: 1, type: "spring", stiffness: 100  }}
                 className='w-auto h-auto flex flex-col gap-5 text-xl absolute right-5 top-1/2 -translate-x-1/2 bg-[#e74d3c55] p-3'
             >
                 <Link className='inline-block transition hover:scale-125' to={'https://web.facebook.com/UtshoBhai007'} target='_blank'><FaFacebook></FaFacebook></Link>
