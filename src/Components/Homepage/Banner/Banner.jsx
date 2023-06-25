@@ -1,13 +1,17 @@
 /* eslint-disable react/no-unescaped-entities */
 import { TypeAnimation } from 'react-type-animation';
-import testBg2 from '../../../assets/img/wave-haikei.svg'
+// import testBg2 from '../../../assets/img/wave-haikei.svg'
+import testBg2 from '../../../assets/img/banner.jpg'
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import myBannerLottie from "public/lottieAnim/programming-computer.json";
+import { LottiePlayer } from 'lottie-react';
+
 
 const Banner = () => {
     return (
-        <div className="min-h-screen bg-cover bg-center flex items-center justify-center text-white bg-fixed relative overflow-x-hidden" style={{ backgroundImage: `url(${testBg2})` }}>
+        <div className="min-h-screen bg-cover bg-center flex items-center justify-center text-white bg-fixed relative overflow-x-hidden bg-slate-900 bg-blend-overlay" style={{ backgroundImage: `url(${testBg2})` }}>
             <div className='pl-14 px-5 w-full md:w-4/6 space-y-8'>
                 <motion.div
                     variants={{
@@ -50,15 +54,13 @@ const Banner = () => {
                 </motion.div>
 
                 <motion.div
-                     variants={{
+                    variants={{
                         hidden: { opacity: 0, y: 75 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     whileInView="visible"
                     transition={{ delay: 0.8, type: "spring", stiffness: 70 }}
-                // animate={{ x: 50 }}
-                // transition={{ type: "spring", stiffness: 100 }}
                 >
                     <Link to={'https://drive.google.com/file/d/1LE_UNmr0u0spqej3QxYeNkNXtryQBo8f/view?usp=drive_link'} target="_blank"><motion.button whileHover={{ scale: 1.1, transition: { duration: .3 } }} whileTap={{ scale: 0.9 }} className={'cmn-btn-one'}> Resume </motion.button> </Link>
                 </motion.div>
@@ -81,6 +83,10 @@ const Banner = () => {
                 <Link className='inline-block transition hover:scale-125' to={'https://github.com/Source-Code-007'} target='_blank'><FaGithub></FaGithub></Link>
             </motion.div>
             {/* </div> */}
+            <div>
+                <LottiePlayer animationData={myBannerLottie} className="flex justify-center items-center" loop={true} />
+
+            </div>
 
         </div >
     );
