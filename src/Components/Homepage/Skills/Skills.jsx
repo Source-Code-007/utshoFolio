@@ -10,7 +10,7 @@ const Skills = () => {
 
 
     const Web = [{ tech: 'HTML', range: '90' }, { tech: 'CSS', range: '85' }, { tech: 'Tailwind', range: '95' }, { tech: 'Bootstrap', range: '85' }, { tech: 'Javascript', range: '70' }, { tech: 'React', range: '90' }, { tech: 'Firebase', range: '45' }, { tech: 'Express JS', range: '40' }, { tech: 'MongoDB', range: '40' }]
-    const Tools = [{ tech: 'VS Code', range: '90' }, { tech: 'Figma', range: '80' }, { tech: 'Git', range: '65' }, { tech: 'Photoshop', range: '35' }]
+    const Tools = [{ tech: 'VS Code', range: '90' }, { tech: 'Figma', range: '80' }, { tech: 'Git', range: '65' }, { tech: 'Postman', range: '75' }, { tech: 'Photoshop', range: '35' }]
     const Others = [{ tech: 'Team work', range: '98' }, { tech: 'Time Management', range: '95' }, { tech: 'Self Motivation', range: '100' }, { tech: 'Problem Solving', range: '70' }]
     const tabs = ['Web', "Tools", "Others"] //for tab button
     const tabPanels = [Web, Tools, Others] // for tabPanel
@@ -38,7 +38,7 @@ const Skills = () => {
 
                                 {
                                     tabPanel.map((skill, ind) =>
-                                        <div key={ind} className='bg-slate-800 bg-opacity-50 text-white py-6 px-8 rounded relative overflow-x-hidden'>
+                                        <div key={ind} className='bg-[#021823] text-white py-6 px-8 rounded relative overflow-x-hidden'>
                                             {skill.tech}
                                             <motion.div
                                                 variants={{
@@ -48,7 +48,7 @@ const Skills = () => {
                                                 initial='hidden'
                                                 whileInView='visible'
                                                 transition={{ delay:.3, type: "spring", stiffness: 45 }}
-                                                className={`absolute top-0 left-0 z-50 h-full bg-[#e74d3c1e]`} ></motion.div>
+                                                className={`absolute top-0 left-0 h-full z-30 shadow bg-[#0e29543a]`} ></motion.div>
                                         </div>
                                     )
                                 }

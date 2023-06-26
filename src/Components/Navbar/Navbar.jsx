@@ -23,6 +23,7 @@ const Navbar = () => {
         }
     }, [isTop])
 
+    
     const menu = <>
         <li><Link className="rounded-none text-slate-50 font-bold hover:!text-orange-500 focus:!text-white" to={'/'}>Home</Link></li>
         <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#about">About</a></li>
@@ -43,7 +44,7 @@ const Navbar = () => {
             transition={{ duration: 0.5, delay: 0.5, type: "spring", stiffness: 100 }}
             className="fixed inset-x-0 z-40"
         >
-            <div className={`navbar shadow transition ${isTop ? 'bg-[#e74d3c09]' : 'bg-[#e74d3c1e]'}`}>
+            <div className={`navbar shadow-lg transition ${isTop ? 'bg-[#02182315]' : 'bg-[#0218238d]'}`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
