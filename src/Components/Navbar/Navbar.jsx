@@ -23,6 +23,7 @@ const Navbar = () => {
         }
     }, [isTop])
 
+    
     const menu = <>
         <li><Link className="rounded-none text-slate-50 font-bold hover:!text-orange-500 focus:!text-white" to={'/'}>Home</Link></li>
         <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#about">About</a></li>
