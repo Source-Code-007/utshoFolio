@@ -26,6 +26,14 @@ h1,h2,h3,h4,h5,h6, button{
 }
 
 
+/* Hide scrollbar */
+/* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 0.5em; /* Adjust the width as needed */
+    background-color: transparent; /* Set the background color to match the container */
+  }
+
+
 .my-container{
     @apply max-w-7xl mx-4 md:mx-6 lg:mx-10 xl:mx-auto
 }
