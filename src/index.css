@@ -26,12 +26,23 @@ h1,h2,h3,h4,h5,h6, button{
 }
 
 
-/* Hide scrollbar */
+
 /* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
-    width: 0.5em; /* Adjust the width as needed */
-    background-color: transparent; /* Set the background color to match the container */
-  }
+  width: 0.5em; /* Adjust the width as needed */
+  background-color: transparent; /* Set the background color to match the container */
+}
+
+/* Hide the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Hide the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 
 
 .my-container{
