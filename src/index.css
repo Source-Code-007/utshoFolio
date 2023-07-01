@@ -26,6 +26,7 @@ h1,h2,h3,h4,h5,h6, button{
 }
 
 
+
 /* Hide the scrollbar for webkit-based browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
   width: 0.5em; /* Adjust the width as needed */
