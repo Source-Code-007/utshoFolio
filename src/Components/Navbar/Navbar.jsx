@@ -29,6 +29,7 @@ const Navbar = () => {
         <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#about">About</a></li>
         <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#skills">Skills</a></li>
         <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#projects">Projects</a></li>
+        <li><a className="rounded-none text-slate-50 font-bold hover:!text-orange-500" href="#contact">Contact</a></li>
         {/* <li><MyActiveLink to={'/'}>Home</MyActiveLink></li>
         <li><MyActiveLink to={'/#about'}>About</MyActiveLink></li> */}
         {/* <li><MyActiveLink to={'/#projects'}>Case Study</MyActiveLink></li> */}
