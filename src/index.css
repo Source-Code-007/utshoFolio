@@ -44,7 +44,6 @@ h1,h2,h3,h4,h5,h6, button{
 
 
 
-
 .my-container{
     @apply max-w-7xl mx-4 md:mx-6 lg:mx-10 xl:mx-auto
 }
