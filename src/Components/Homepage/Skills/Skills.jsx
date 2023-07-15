@@ -20,6 +20,7 @@ const Skills = () => {
             <CommonSectionTitle title={'skills'} subtitle={'Cutting-Edge Web Development Expertise'}></CommonSectionTitle>
             <Tabs className={'mt-10'}>
 
+
                 <TabList className={'flex justify-center gap-12'}>
                     {
                         tabs.map((tab, ind) => {
