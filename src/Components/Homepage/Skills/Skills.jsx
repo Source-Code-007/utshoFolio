@@ -35,6 +35,7 @@ const Skills = () => {
 
 
 
+
                 <div className='mt-12 '>
                     {tabPanels.map((tabPanel, ind) => {
                         return <TabPanel key={ind}>
