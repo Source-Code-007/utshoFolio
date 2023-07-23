@@ -8,6 +8,7 @@ const Skills = () => {
     const [currTab, setCurrTab] = useState('Web')
 
     
+
     
     
 
