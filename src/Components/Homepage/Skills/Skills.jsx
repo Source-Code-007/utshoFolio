@@ -15,8 +15,9 @@ const Skills = () => {
     const tabPanels = [Web, Tools, Others] // for tabPanel
 
 
-    
 
+
+    
 
 
     return (
