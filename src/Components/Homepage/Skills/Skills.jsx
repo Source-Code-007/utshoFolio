@@ -14,8 +14,8 @@ const Skills = () => {
     const tabs = ['Web', "Tools", "Others"] //for tab button
     const tabPanels = [Web, Tools, Others] // for tabPanel
 
-
     
+
     
 
     return (
