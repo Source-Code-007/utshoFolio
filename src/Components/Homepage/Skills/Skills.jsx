@@ -17,8 +17,9 @@ const Skills = () => {
 
 
 
-
     
+
+
 
     return (
         <div className='my-container py-14' id='skills'>
