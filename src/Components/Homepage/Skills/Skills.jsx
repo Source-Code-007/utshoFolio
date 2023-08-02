@@ -15,6 +15,7 @@ const Skills = () => {
     const tabPanels = [Web, Tools, Others] // for tabPanel
 
 
+
     return (
         <div className='my-container py-14' id='skills'>
             <CommonSectionTitle title={'skills'} subtitle={'Cutting-Edge Web Development Expertise'}></CommonSectionTitle>
