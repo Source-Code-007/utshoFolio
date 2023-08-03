@@ -15,8 +15,9 @@ const Skills = () => {
     const tabPanels = [Web, Tools, Others] // for tabPanel
 
 
-    
 
+
+    
     
     return (
         <div className='my-container py-14' id='skills'>
