@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
 
+    
     return (
         <div className='py-20 mb-32 my-container' id='projects'>
             <CommonSectionTitle title={'projects'} subtitle={'Here you will find some of the personal and clients projects that I created with each project containing its own case study'}></CommonSectionTitle>
