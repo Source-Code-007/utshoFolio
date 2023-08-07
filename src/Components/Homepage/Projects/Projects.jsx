@@ -6,7 +6,6 @@ import wizCraftMockup from '../../../assets/img/wizCraft-academy.png'
 import { motion } from "framer-motion";
 
 
-
 const Projects = () => {
 
     return (
